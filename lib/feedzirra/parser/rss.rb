@@ -14,6 +14,7 @@ module Feedzirra
       include FeedUtilities
       element :title
       element :link, :as => :url
+      element :link, :as => :hub, :value => :href, :with => {:rel => "hub"}
       elements :item, :as => :entries, :class => RSSEntry
 
       attr_accessor :feed_url
