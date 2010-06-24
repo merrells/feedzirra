@@ -14,6 +14,7 @@ module Feedzirra
       include FeedUtilities
       element :title
       element :link, :as => :url, :value => :href, :with => {:type => "text/html"}
+      element :link, :as => :hub, :value => :href, :with => {:rel => "hub"}
       element :link, :as => :feed_url, :value => :href, :with => {:type => "application/atom+xml"}
       elements :entry, :as => :entries, :class => AtomFeedBurnerEntry
 
