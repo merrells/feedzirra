@@ -8,7 +8,10 @@ require 'uri'
 
 require 'active_support/version'
 require 'active_support/basic_object'
+require 'active_support/core_ext/module'
+require 'active_support/core_ext/kernel'
 require 'active_support/core_ext/object'
+
 if ActiveSupport::VERSION::MAJOR >= 3
   require 'active_support/time'
 else
@@ -34,5 +37,5 @@ require 'feedzirra/parser/atom'
 require 'feedzirra/parser/atom_feed_burner'
 
 module Feedzirra
-  VERSION = "0.0.23"
+  VERSION = "0.0.24"
 end
